@@ -63,7 +63,6 @@
 　　　　　　};
 　　　　}
 　　};
-
 　　alert(object.getNameFunc()());//My Object
 ```
 
