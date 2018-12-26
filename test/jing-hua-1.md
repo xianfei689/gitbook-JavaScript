@@ -31,7 +31,7 @@ console.log(person2.name) // Kevin
 
 > 这里输入引用文本每一个JavaScript对象\(除了 null \)都具有的一个属性，叫\_\_proto\_\_，这个属性会指向该对象的原型。
 
-```
+```js
 function
 Person
 ()
@@ -74,7 +74,7 @@ constructor
 
 > 当读取实例的属性时，如果找不到，就会查找与对象关联的原型中的属性，如果还查不到，就去找原型的原型，一直找到最顶层为止。
 
-```
+```js
 function
 Person
 ()
@@ -109,7 +109,7 @@ console
 
 **5.补充**
 
-```
+```js
 function
 Person
 ()
@@ -129,11 +129,8 @@ console
 
 > 当获取 person.constructor 时，其实 person 中并没有 constructor 属性,当不能读取到constructor 属性时，会从 person 的原型也就是 Person.prototype 中读取，正好原型中有该属性，所以：
 
-```
-person.
-constructor
- === Person.prototype.
-constructor
+```js
+person.constructor === Person.prototype.constructor
 ```
 
 
