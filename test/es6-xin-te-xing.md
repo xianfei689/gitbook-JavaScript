@@ -1,6 +1,6 @@
 ES6 新特性
 
-[编辑](https://gitee.com/zhouxianfei/zhouxf.front.doc/wikis/ES6%20%20%E6%96%B0%E7%89%B9%E6%80%A7?parent=JavaScript%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95)
+[编辑](https://gitee.com/zhouxianfei/zhouxf.front.doc/wikis/ES6  新特性?parent=JavaScript高级语法)
 
 ## 参考连接：
 
@@ -21,21 +21,10 @@ var link = function (height, color, url) {
 
 > ES6:
 
-```
-var link = 
-function
-(height = 
-50
-, color = 
-'red'
-, url = 
-'http://azat.co'
-) {
-  
-...
-
+```js
+var link = function(height = 50, color = 'red', url = 'http://azat.co') {
+  ...
 }
-
 ```
 
 ### 2. 模版表达式
@@ -58,7 +47,6 @@ var
  url = 
 'http://localhost:3000/api/messages/'
  + id;
-
 ```
 
 > ES6:
@@ -75,7 +63,6 @@ var
     ${id}
     `
     ;
-
 
 ### 3. 多行字符串
 
@@ -105,7 +92,6 @@ for
     + 
 'Had
  worn them really about the same,nt';
-
 ```
 
 > ES6:
@@ -136,8 +122,6 @@ for
     the
      same,`;
 
-
-
 ### 4. 解构赋值
 
 > 之前:
@@ -157,7 +141,6 @@ body
    password = 
 body
 .password;
-
 ```
 
 > ES6:
@@ -172,8 +155,6 @@ require
 
 var
  {username, password} = req.body;
-
-
 ```
 
 ### 5. 箭头函数
@@ -193,13 +174,11 @@ function
 {
   _this.sendData()
 })
-
 ```
 
 > ES6:
 
 ```
-
 $(
 '.btn'
 ).click(
@@ -207,12 +186,10 @@ $(
  =
 >
 {
-  
+
 this
 .sendData()
 })
-
-
 ```
 
 ### 6. let与const 关键字
@@ -236,7 +213,7 @@ if
  (
 true
 ) {
-  
+
 // TDZ开始
 
   tmp = 
@@ -257,13 +234,12 @@ console
   tmp = 
 123
 ;
-  
+
 console
 .log(tmp); 
 // 123
 
 }
-
 ```
 
 ---
