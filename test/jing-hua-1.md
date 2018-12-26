@@ -32,21 +32,10 @@ console.log(person2.name) // Kevin
 > 这里输入引用文本每一个JavaScript对象\(除了 null \)都具有的一个属性，叫\_\_proto\_\_，这个属性会指向该对象的原型。
 
 ```js
-function
-Person
-()
-{
+function Person() {
 
 }
-
-var
- person = 
-new
- Person();
-
-console
-.log(person.__proto__ === Person.prototype); 
-// true
+console.log(Person === Person.prototype.constructor); // true
 ```
 
 **3. constructor**
