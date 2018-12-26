@@ -48,7 +48,6 @@
 　　　　　　return function(){
 　　　　　　　　return this.name;
 　　　　　　};
-
 　　　　}
 　　};
 　　alert(object.getNameFunc()()); //The Window
