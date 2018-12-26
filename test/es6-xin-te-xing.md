@@ -106,16 +106,9 @@ body
 
 > ES6:
 
-```
-var
- {jsonMiddleware} = 
-require
-(
-'body-parser'
-);
-
-var
- {username, password} = req.body;
+```js
+var {jsonMiddleware} = require('body-parser');
+var {username, password} = req.body;
 ```
 
 ### 5. 箭头函数
