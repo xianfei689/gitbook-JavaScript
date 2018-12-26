@@ -4,5 +4,5 @@
 
 ## list
 
-* [精华1](test/jing-hua-1.md)
+* [JS原型链与继承](test/jing-hua-1.md)
 
