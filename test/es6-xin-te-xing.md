@@ -88,20 +88,10 @@ var roadPoem = 'Then took the other, as just as fair,nt'
 > 之前:
 
 ```js
-var jsonMiddleware = require(
-'body
--parser').jsonMiddleware ;
-var 
-body
- = req.
-body
-,
-   username = 
-body
-.username,
-   password = 
-body
-.password;
+var jsonMiddleware = require('body-parser').jsonMiddleware ;
+var body = req.body,
+   username = body.username,
+   password = body.password;
 ```
 
 > ES6:
