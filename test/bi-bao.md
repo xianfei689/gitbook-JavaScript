@@ -50,7 +50,6 @@
 　　　　　　};
 
 　　　　}
-
 　　};
 　　alert(object.getNameFunc()()); //The Window
 ```
