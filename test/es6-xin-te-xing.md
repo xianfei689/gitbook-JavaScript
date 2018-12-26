@@ -75,7 +75,7 @@ for
 
 > ES6:
 
-```
+```js
 var roadPoem = 'Then took the other, as just as fair,nt'
     + 'And having perhaps the better claimnt'
     + 'Because it was grassy and wanted wear,nt'
@@ -87,7 +87,7 @@ var roadPoem = 'Then took the other, as just as fair,nt'
 
 > 之前:
 
-```
+```js
 var jsonMiddleware = require(
 'body
 -parser').jsonMiddleware ;
@@ -139,17 +139,9 @@ function
 
 > ES6:
 
-```
-$(
-'.btn'
-).click(
-(event)
- =
->
-{
-
-this
-.sendData()
+```js
+$('.btn').click((event) =>{
+  this.sendData()
 })
 ```
 
@@ -164,42 +156,18 @@ this
 * let不会像var一样声明提前，只能在定义之后使用，之前使用会抛出ReferenceError；
 * 并且只要作用域内有let声明的变量，这个变量就会被绑定，不受原来变量声明规则的影响。即ES6明确规定，如果区块中存在let和const命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些命令，就会报错。这在语法上，称为“暂时性死区”（temporal dead zone，TDZ）。
 
-```
-var
- tmp = 
-123
-;
+```js
+var tmp = 123;
+if (true) {
+  // TDZ开始
+  tmp = 'abc'; // ReferenceError
+  console.log(tmp); // ReferenceError
 
-if
- (
-true
-) {
+  let tmp; // TDZ结束
+  console.log(tmp); // undefined
 
-// TDZ开始
-
-  tmp = 
-'abc'
-; 
-// ReferenceError
-console
-.log(tmp); 
-// ReferenceError
-let
- tmp; 
-// TDZ结束
-console
-.log(tmp); 
-// undefined
-
-
-  tmp = 
-123
-;
-
-console
-.log(tmp); 
-// 123
-
+  tmp = 123;
+  console.log(tmp); // 123
 }
 ```
 
