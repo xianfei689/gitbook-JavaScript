@@ -35,28 +35,19 @@ console.log(person2.name) // Kevin
 function Person() {
 
 }
-console.log(Person === Person.prototype.constructor); // true
+var person = new Person();
+console.log(person.__proto__ === Person.prototype); // true
 ```
 
 **3. constructor**
 
 > 每个原型都有一个 constructor 属性指向关联的构造函数.
 
-```
-function
-Person
-()
-{
+```js
+function Person() {
 
 }
-console
-.
-log
-(Person === Person.prototype.
-constructor
-)
-;
-// true
+console.log(Person === Person.prototype.constructor); // true
 ```
 
 **4. 实例与原型**
