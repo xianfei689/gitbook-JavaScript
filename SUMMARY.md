@@ -2,7 +2,7 @@
 
 * [ECMAScript](README.md)
 
-## test
+## list
 
 * [精华1](test/jing-hua-1.md)
 
