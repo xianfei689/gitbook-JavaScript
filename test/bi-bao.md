@@ -39,39 +39,21 @@
 > **如果你能理解下面两段代码的运行结果，应该就算理解闭包的运行机制了。**
 
 ```js
-var
- name = 
-"The Window"
-;
+　　var name = "The Window";
 
-　　
-var
- object = {
-　　　　name : 
-"My Object"
-,
+　　var object = {
+　　　　name : "My Object",
 
-　　　　getNameFunc : 
-function
-()
-{
-　　　　　　
-return
-function
-()
-{
-　　　　　　　　
-return
-this
-.name;
+　　　　getNameFunc : function(){
+　　　　　　return function(){
+　　　　　　　　return this.name;
 　　　　　　};
 
 　　　　}
 
 　　};
 
-　　alert(object.getNameFunc()()); 
-//The Window
+　　alert(object.getNameFunc()()); //The Window
 ```
 
 ```js
