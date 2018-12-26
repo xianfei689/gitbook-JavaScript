@@ -67,7 +67,6 @@
 　　　　　　　　return that.name;
 　　　　　　};
 　　　　}
-
 　　};
 
 　　alert(object.getNameFunc()());//My Object
