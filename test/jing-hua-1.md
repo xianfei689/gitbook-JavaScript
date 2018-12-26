@@ -1,6 +1,6 @@
 JS原型链与继承
 
-[编辑](https://gitee.com/zhouxianfei/zhouxf.front.doc/wikis/JS%E5%8E%9F%E5%9E%8B%E9%93%BE%E4%B8%8E%E7%BB%A7%E6%89%BF?parent=JavaScript%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95)
+[编辑](https://gitee.com/zhouxianfei/zhouxf.front.doc/wikis/JS原型链与继承?parent=JavaScript高级语法)
 
 ### 原型链的关系图：
 
@@ -10,7 +10,7 @@ JS原型链与继承
 
 > 这里输入引用文本每个函数都有一个 prototype 属性，就是我们经常在各种例子中看到的那个 prototype ，比如：
 
-```
+```js
 function Person() {
 
 }
@@ -24,7 +24,7 @@ console.log(person2.name) // Kevin
 ```
 
 > prototype 属性指向了一个对象，这个对象正是调用该构造函数而创建的实例的原型，也就是这个例子中的 person1 和 person2 的原型。
-
+>
 > 什么是原型？ 每一个JavaScript对象\(null除外\)在创建的时候就会与之关联另一个对象，这个对象就是我们所说的原型，每一个对象都会从原型"继承"属性。
 
 **2.proto**
