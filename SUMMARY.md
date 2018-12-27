@@ -11,4 +11,5 @@
 * [作用域 闭包](list/bi-bao.md)
 * [严格模式](list/yan-ge-mo-shi.md)
 * [正则表达式](list/zheng-ze-biao-da-shi.md)
+* [事件委托&事件冒泡](list/shi-jian-wei-tuo-shi-jian-mao-pao.md)
 
