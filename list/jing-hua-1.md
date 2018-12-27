@@ -86,6 +86,24 @@ console.log(person.constructor === Person); // true
 person.constructor === Person.prototype.constructor
 ```
 
+## 如何实现继承？
+
+* 实例继承 instance
+* 拷贝继承 copy
+* 构造继承 constructor
+* 原型继承 prototype。原型继承，就是函数对象的原型= 构造函数
+
+```javascript
+function PP(){
+  this.pp='爷爷'
+}
+function AA(){
+  this.aa='爸爸'
+}
+AA.prototype=new PP()
+console.info(AA.prototype.pp) //爷爷 .
+```
+
 ## [js中的new\(\)到底做了些什么？？](https://www.cnblogs.com/faith3/p/6209741.html)
 
 要创建 Person 的新实例，必须使用 new 操作符。以这种方式调用构造函数实际上会经历以下 4  
