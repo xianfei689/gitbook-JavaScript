@@ -86,5 +86,31 @@ console.log(person.constructor === Person); // true
 person.constructor === Person.prototype.constructor
 ```
 
+## [js中的new\(\)到底做了些什么？？](https://www.cnblogs.com/faith3/p/6209741.html)
 
+要创建 Person 的新实例，必须使用 new 操作符。以这种方式调用构造函数实际上会经历以下 4  
+个步骤：  
+\(1\) 创建一个新对象；  
+\(2\) 将构造函数的作用域赋给新对象（因此 this 就指向了这个新对象） ；  
+\(3\) 执行构造函数中的代码（为这个新对象添加属性） ；  
+\(4\) 返回新对象。
+
+**new 操作符**
+
+在有上面的基础概念的介绍之后，在加上new操作符，我们就能完成传统面向对象的class + new的方式创建对象，在[JavaScript](http://lib.csdn.net/base/javascript)中，我们将这类方式成为Pseudoclassical。  
+基于上面的例子，我们执行如下代码
+
+```javascript
+var obj = new Base();
+```
+
+![](../.gitbook/assets/image.png)
+
+ new操作符具体干了什么呢?其实很简单，就干了三件事情。
+
+```javascript
+var obj  = {};
+obj.__proto__ = Base.prototype;
+Base.call(obj);
+```
 
