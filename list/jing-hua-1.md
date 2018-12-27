@@ -114,3 +114,7 @@ obj.__proto__ = Base.prototype;
 Base.call(obj);
 ```
 
+ 第一行，我们创建了一个空对象obj  
+第二行，我们将这个空对象的\_\_proto\_\_成员指向了Base函数对象prototype成员对象  
+第三行，我们将Base函数对象的this指针替换成obj，然后再调用Base函数，于是我们就给obj对象赋值了一个id成员变量，这个成员变量的值是”base”，关于call函数的用法
+
