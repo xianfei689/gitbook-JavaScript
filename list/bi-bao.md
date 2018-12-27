@@ -1,8 +1,10 @@
+# 作用域 闭包
+
 闭包（closure）
 
 [编辑](https://gitee.com/zhouxianfei/zhouxf.front.doc/wikis/闭包（closure）?parent=JavaScript高级语法)
 
-```js
+```javascript
 　　function f1(){
 　　　　var n=999;
 　　　　function f2(){
@@ -32,7 +34,7 @@
 
 > **如果你能理解下面两段代码的运行结果，应该就算理解闭包的运行机制了。**
 
-```js
+```javascript
 　　var name = "The Window";
 　　var object = {
 　　　　name : "My Object",
@@ -45,7 +47,7 @@
 　　alert(object.getNameFunc()()); //The Window
 ```
 
-```js
+```javascript
 　　var name = "The Window";
 
 　　var object = {
@@ -59,6 +61,4 @@
 　　};
 　　alert(object.getNameFunc()());//My Object
 ```
-
-
 

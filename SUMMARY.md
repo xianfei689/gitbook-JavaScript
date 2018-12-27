@@ -1,14 +1,14 @@
-# Summary
+# Table of contents
 
 * [ECMAScript](README.md)
 
 ## list
 
-* [JS原型链与继承](test/jing-hua-1.md)
-* [宿主对象](su-zhu-dui-xiang.md)
-* [ES6 新特性](test/es6-xin-te-xing.md)
-* 上线文环境
-* [作用域 闭包](test/bi-bao.md)
-* 严格模式
-* 正则表达式
+* [JS原型链与继承](list/jing-hua-1.md)
+* [宿主对象](list/su-zhu-dui-xiang.md)
+* [ES6 新特性](list/es6-xin-te-xing.md)
+* [上线文环境](list/shang-xian-wen-huan-jing.md)
+* [作用域 闭包](list/bi-bao.md)
+* [严格模式](list/yan-ge-mo-shi.md)
+* [正则表达式](list/zheng-ze-biao-da-shi.md)
 

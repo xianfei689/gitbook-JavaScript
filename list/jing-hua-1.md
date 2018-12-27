@@ -1,16 +1,16 @@
+# JS原型链与继承
+
 JS原型链与继承
 
-[编辑](https://gitee.com/zhouxianfei/zhouxf.front.doc/wikis/JS原型链与继承?parent=JavaScript高级语法)
+## 原型链的关系图：
 
-### 原型链的关系图：
-
-![](https://images.gitee.com/uploads/images/2018/1130/192415_8e30712f_1422543.png "输入图片说明")
+![&#x8F93;&#x5165;&#x56FE;&#x7247;&#x8BF4;&#x660E;](https://images.gitee.com/uploads/images/2018/1130/192415_8e30712f_1422543.png)
 
 **1. prototype**
 
 > 这里输入引用文本每个函数都有一个 prototype 属性，就是我们经常在各种例子中看到的那个 prototype ，比如：
 
-```js
+```javascript
 function Person() {
 
 }
@@ -31,7 +31,7 @@ console.log(person2.name) // Kevin
 
 > 这里输入引用文本每一个JavaScript对象\(除了 null \)都具有的一个属性，叫\_\_proto\_\_，这个属性会指向该对象的原型。
 
-```js
+```javascript
 function Person() {
 
 }
@@ -43,7 +43,7 @@ console.log(person.__proto__ === Person.prototype); // true
 
 > 每个原型都有一个 constructor 属性指向关联的构造函数.
 
-```js
+```javascript
 function Person() {
 
 }
@@ -54,7 +54,7 @@ console.log(Person === Person.prototype.constructor); // true
 
 > 当读取实例的属性时，如果找不到，就会查找与对象关联的原型中的属性，如果还查不到，就去找原型的原型，一直找到最顶层为止。
 
-```js
+```javascript
 function Person() {
 
 }
@@ -72,7 +72,7 @@ console.log(person.name) // Kevin
 
 **5.补充**
 
-```js
+```javascript
 function Person() {
 
 }
@@ -82,7 +82,7 @@ console.log(person.constructor === Person); // true
 
 > 当获取 person.constructor 时，其实 person 中并没有 constructor 属性,当不能读取到constructor 属性时，会从 person 的原型也就是 Person.prototype 中读取，正好原型中有该属性，所以：
 
-```js
+```javascript
 person.constructor === Person.prototype.constructor
 ```
 
