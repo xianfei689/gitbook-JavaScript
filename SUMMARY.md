@@ -12,4 +12,6 @@
 * [严格模式](list/yan-ge-mo-shi.md)
 * [正则表达式](list/zheng-ze-biao-da-shi.md)
 * [事件委托&事件冒泡](list/shi-jian-wei-tuo-shi-jian-mao-pao.md)
+* [深拷贝&浅拷贝](list/shen-kao-bei-qian-kao-bei.md)
+* [js 的异步机制](list/js-de-yi-bu-ji-zhi.md)
 
