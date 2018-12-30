@@ -2,9 +2,7 @@
 
 # ECMAScript
 ----
+European Computer Manufactures Association”
 
 
-
-
-ECMAScript
 
