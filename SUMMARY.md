@@ -1,6 +1,6 @@
-# Table of contents
+# Summary
 
-* [ECMAScript](README.md)
+* [JavaScript](README.md)
 
 ## list
 
