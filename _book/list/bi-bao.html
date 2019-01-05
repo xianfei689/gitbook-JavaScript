@@ -1,0 +1,462 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>作用域 闭包 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="yan-ge-mo-shi.html" />
+    
+    
+    <link rel="prev" href="shang-xian-wen-huan-jing.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    ECMAScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">list</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="jing-hua-1.html">
+            
+                <a href="jing-hua-1.html">
+            
+                    
+                    JS原型链与继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="su-zhu-dui-xiang.html">
+            
+                <a href="su-zhu-dui-xiang.html">
+            
+                    
+                    宿主对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="es6-xin-te-xing.html">
+            
+                <a href="es6-xin-te-xing.html">
+            
+                    
+                    ES6 新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="es6-he-xin-te-xing.html">
+            
+                <a href="es6-he-xin-te-xing.html">
+            
+                    
+                    ES6核心特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="shang-xian-wen-huan-jing.html">
+            
+                <a href="shang-xian-wen-huan-jing.html">
+            
+                    
+                    上线文环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6" data-path="bi-bao.html">
+            
+                <a href="bi-bao.html">
+            
+                    
+                    作用域 闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="yan-ge-mo-shi.html">
+            
+                <a href="yan-ge-mo-shi.html">
+            
+                    
+                    严格模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="zheng-ze-biao-da-shi.html">
+            
+                <a href="zheng-ze-biao-da-shi.html">
+            
+                    
+                    正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="shi-jian-wei-tuo-shi-jian-mao-pao.html">
+            
+                <a href="shi-jian-wei-tuo-shi-jian-mao-pao.html">
+            
+                    
+                    事件委托&事件冒泡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="shen-kao-bei-qian-kao-bei.html">
+            
+                <a href="shen-kao-bei-qian-kao-bei.html">
+            
+                    
+                    深拷贝&浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="js-de-yi-bu-ji-zhi.html">
+            
+                <a href="js-de-yi-bu-ji-zhi.html">
+            
+                    
+                    js 的异步机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="pan-duan-js-shu-ju-lei-xing-de-si-zhong-fang-fa.html">
+            
+                <a href="pan-duan-js-shu-ju-lei-xing-de-si-zhong-fang-fa.html">
+            
+                    
+                    判断JS数据类型的四种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >作用域 闭包</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4F5C;&#x7528;&#x57DF;-&#x95ED;&#x5305;">&#x4F5C;&#x7528;&#x57DF; &#x95ED;&#x5305;</h1>
+<p>&#x95ED;&#x5305;&#xFF08;closure&#xFF09;</p>
+<p>&#x95ED;&#x5305;&#x7684;&#x7279;&#x70B9;</p>
+<ul>
+<li>&#x95ED;&#x5305;&#xFF0C;&#x662F;&#x6307;&#x6709;&#x6743;&#x8BBF;&#x95EE;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x53D8;&#x91CF;&#x7684;&#x51FD;&#x6570;&#x3002;a&#x51FD;&#x6570;&#x5185;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;b&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x6307;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x4FDD;&#x7559;&#x53D8;&#x91CF;&#xFF0C;&#x88AB;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x8BBF;&#x95EE;</li>
+<li>&#x6709;&#x6743;&#x8BBF;&#x95EE;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x53D8;&#x91CF;&#x7684;&#x51FD;&#x6570;&#x90FD;&#x662F;&#x95ED;&#x5305;&#x3002;</li>
+<li>&#x53D8;&#x91CF;&#x88AB;&#x5F15;&#x7528;&#x7740;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x88AB;&#x56DE;&#x6536;</li>
+<li>&#x6280;&#x672F;&#x4E0A;&#xFF0C;&#x6240;&#x6709;js&#x51FD;&#x6570;&#x90FD;&#x662F;&#x95ED;&#x5305;&#xFF0C;&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x5173;&#x8054;&#x5230;&#x4F5C;&#x7528;&#x57DF;&#x94FE;</li>
+<li>&#x9020;&#x6210;&#x539F;&#x59CB;&#x4F5C;&#x7528;&#x57DF;&#x94FE;&#x4E0D;&#x91CA;&#x653E;&#xFF0C;&#x9020;&#x6210;&#x5185;&#x5B58;&#x6CC4;&#x9732;</li>
+</ul>
+<p>&#x95ED;&#x5305;&#x7684;&#x573A;&#x666F;</p>
+<ul>
+<li>&#x95ED;&#x5305;&#x66FF;&#x4EE3;&#x5168;&#x5C40;&#x53D8;&#x91CF;</li>
+<li>&#x51FD;&#x6570;&#x5916;&#x6216;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x4E2D;&#x8BBF;&#x95EE;&#x67D0;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x53C2;&#x6570;</li>
+<li>&#x51FD;&#x6570;&#x6267;&#x884C;&#x4E4B;&#x524D;&#xFF0C;&#x4E3A;&#x8981;&#x6267;&#x884C;&#x540E;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x63D0;&#x4F9B;&#x5177;&#x4F53;&#x7684;&#x53C2;&#x6570;</li>
+<li>&#x4E3A;&#x51FD;&#x6570;&#x6267;&#x884C;&#x4E4B;&#x524D;&#x63D0;&#x4F9B;&#x8D28;&#x4F18;&#x5728;&#x51FD;&#x6570;&#x6267;&#x884C;&#x6216;&#x5F15;&#x7528;&#x65F6;&#x624D;&#x80FD;&#x77E5;&#x9053;&#x7684;&#x5177;&#x4F53;&#x53C2;&#x6570;</li>
+<li>&#x4E3A;&#x8282;&#x70B9;&#x5FAA;&#x73AF;&#x7ED1;&#x5B9A;click &#x4E8B;&#x4EF6;&#xFF0C;&#x5728;&#x4E8B;&#x4EF6;&#x51FD;&#x6570;&#x4E2D;&#x4F7F;&#x7528;&#x6863;&#x6B21;&#x5FAA;&#x73AF;&#x7684;&#x503C;&#x6216;&#x8282;&#x70B9;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x5FAA;&#x73AF;&#x7684;&#x503C;&#x6216;&#x8282;&#x70B9;</li>
+</ul>
+<pre><code class="lang-javascript">&#x3000;&#x3000;<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f1</span>(<span class="hljs-params"></span>)</span>{
+&#x3000;&#x3000;&#x3000;&#x3000;<span class="hljs-keyword">var</span> n=<span class="hljs-number">999</span>;
+&#x3000;&#x3000;&#x3000;&#x3000;<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f2</span>(<span class="hljs-params"></span>)</span>{
+&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;alert(n); 
+&#x3000;&#x3000;&#x3000;&#x3000;}
+&#x3000;&#x3000;&#x3000;&#x3000;<span class="hljs-keyword">return</span> f2;
+&#x3000;&#x3000;}
+&#x3000;&#x3000;<span class="hljs-keyword">var</span> result=f1();
+&#x3000;&#x3000;result(); <span class="hljs-comment">// 999</span>
+</code></pre>
+<blockquote>
+<p>f2&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x662F;&#x95ED;&#x5305;</p>
+<p>** &#x95ED;&#x5305;&#xFF1A;** &#x6211;&#x7684;&#x7406;&#x89E3;&#x662F;&#xFF0C;&#x95ED;&#x5305;&#x5C31;&#x662F;&#x80FD;&#x591F;&#x8BFB;&#x53D6;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x53D8;&#x91CF;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<p>Javascript&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x53EA;&#x6709;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684;&#x5B50;&#x51FD;&#x6570;&#x624D;&#x80FD;&#x8BFB;&#x53D6;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x628A;&#x95ED;&#x5305;&#x7B80;&#x5355;&#x7406;&#x89E3;&#x6210;&quot;&#x5B9A;&#x4E49;&#x5728;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684;&#x51FD;&#x6570;&quot;&#x3002;</p>
+<p>&#x5728;&#x672C;&#x8D28;&#x4E0A;&#xFF0C;&#x95ED;&#x5305;&#x5C31;&#x662F;&#x5C06;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x548C;&#x51FD;&#x6570;&#x5916;&#x90E8;&#x8FDE;&#x63A5;&#x8D77;&#x6765;&#x7684;&#x4E00;&#x5EA7;&#x6865;&#x6881;&#x3002;</p>
+<p>&#x95ED;&#x5305;&#x7684;&#x7528;&#x9014;&#xFF1A;&#x4E00;&#x4E2A;&#x662F;&#x524D;&#x9762;&#x63D0;&#x5230;&#x7684;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x5C31;&#x662F;&#x8BA9;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x59CB;&#x7EC8;&#x4FDD;&#x6301;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x3002;</p>
+<p><strong>&#x95ED;&#x5305;&#x7684;&#x6CE8;&#x610F;&#x70B9;</strong></p>
+</blockquote>
+<p>1&#xFF09;&#x7531;&#x4E8E;&#x95ED;&#x5305;&#x4F1A;&#x4F7F;&#x5F97;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x90FD;&#x88AB;&#x4FDD;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x5185;&#x5B58;&#x6D88;&#x8017;&#x5F88;&#x5927;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x6EE5;&#x7528;&#x95ED;&#x5305;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x9020;&#x6210;&#x7F51;&#x9875;&#x7684;&#x6027;&#x80FD;&#x95EE;&#x9898;&#xFF0C;&#x5728;IE&#x4E2D;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x6CC4;&#x9732;&#x3002;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x662F;&#xFF0C;&#x5728;&#x9000;&#x51FA;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#xFF0C;&#x5C06;&#x4E0D;&#x4F7F;&#x7528;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x5168;&#x90E8;&#x5220;&#x9664;&#x3002;</p>
+<p>2&#xFF09;&#x95ED;&#x5305;&#x4F1A;&#x5728;&#x7236;&#x51FD;&#x6570;&#x5916;&#x90E8;&#xFF0C;&#x6539;&#x53D8;&#x7236;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x628A;&#x7236;&#x51FD;&#x6570;&#x5F53;&#x4F5C;&#x5BF9;&#x8C61;&#xFF08;object&#xFF09;&#x4F7F;&#x7528;&#xFF0C;&#x628A;&#x95ED;&#x5305;&#x5F53;&#x4F5C;&#x5B83;&#x7684;&#x516C;&#x7528;&#x65B9;&#x6CD5;&#xFF08;Public Method&#xFF09;&#xFF0C;&#x628A;&#x5185;&#x90E8;&#x53D8;&#x91CF;&#x5F53;&#x4F5C;&#x5B83;&#x7684;&#x79C1;&#x6709;&#x5C5E;&#x6027;&#xFF08;private value&#xFF09;&#xFF0C;&#x8FD9;&#x65F6;&#x4E00;&#x5B9A;&#x8981;&#x5C0F;&#x5FC3;&#xFF0C;&#x4E0D;&#x8981;&#x968F;&#x4FBF;&#x6539;&#x53D8;&#x7236;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x3002;</p>
+<blockquote>
+<p><strong>&#x5982;&#x679C;&#x4F60;&#x80FD;&#x7406;&#x89E3;&#x4E0B;&#x9762;&#x4E24;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#xFF0C;&#x5E94;&#x8BE5;&#x5C31;&#x7B97;&#x7406;&#x89E3;&#x95ED;&#x5305;&#x7684;&#x8FD0;&#x884C;&#x673A;&#x5236;&#x4E86;&#x3002;</strong></p>
+</blockquote>
+<pre><code class="lang-javascript">&#x3000;&#x3000;<span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;The Window&quot;</span>;
+&#x3000;&#x3000;<span class="hljs-keyword">var</span> object = {
+&#x3000;&#x3000;&#x3000;&#x3000;name : <span class="hljs-string">&quot;My Object&quot;</span>,
+&#x3000;&#x3000;&#x3000;&#x3000;getNameFunc : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;<span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.name;
+&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;};
+&#x3000;&#x3000;&#x3000;&#x3000;}
+&#x3000;&#x3000;};
+&#x3000;&#x3000;alert(object.getNameFunc()()); <span class="hljs-comment">//The Window</span>
+</code></pre>
+<pre><code class="lang-javascript">&#x3000;&#x3000;<span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;The Window&quot;</span>;
+
+&#x3000;&#x3000;<span class="hljs-keyword">var</span> object = {
+&#x3000;&#x3000;&#x3000;&#x3000;name : <span class="hljs-string">&quot;My Object&quot;</span>,
+&#x3000;&#x3000;&#x3000;&#x3000;getNameFunc : <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;<span class="hljs-keyword">var</span> that = <span class="hljs-keyword">this</span>;
+&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;<span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;<span class="hljs-keyword">return</span> that.name;
+&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;};
+&#x3000;&#x3000;&#x3000;&#x3000;}
+&#x3000;&#x3000;};
+&#x3000;&#x3000;alert(object.getNameFunc()());<span class="hljs-comment">//My Object</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="shang-xian-wen-huan-jing.html" class="navigation navigation-prev " aria-label="Previous page: 上线文环境">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="yan-ge-mo-shi.html" class="navigation navigation-next " aria-label="Next page: 严格模式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"作用域 闭包","level":"2.6","depth":1,"next":{"title":"严格模式","level":"2.7","depth":1,"path":"list/yan-ge-mo-shi.md","ref":"list/yan-ge-mo-shi.md","articles":[]},"previous":{"title":"上线文环境","level":"2.5","depth":1,"path":"list/shang-xian-wen-huan-jing.md","ref":"list/shang-xian-wen-huan-jing.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"list/bi-bao.md","mtime":"2018-12-27T11:44:11.195Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-05T08:38:44.516Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

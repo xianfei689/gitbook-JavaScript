@@ -122,7 +122,7 @@ console.info(AA.prototype.pp) //爷爷 .
 var obj = new Base();
 ```
 
-![](../.gitbook/assets/image.png)
+![](../gitbook/assets/image.png)
 
  new操作符具体干了什么呢?其实很简单，就干了三件事情。
 
