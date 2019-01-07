@@ -1,7 +1,5 @@
 # JS原型链与继承
 
-
-
 **Javascript虽然没有继承概念，但Javascript在函数Function对象中建立了原型对象prototype，并以Function对象为主线，从上至下，在内部构建了一条原型链。**
 
 **简单来说就是建立了变量查找机制，当访问一个对象的属性时，先查找对象本身是否存在，如果不存在就去该对象所在的原型连上去找，直到Object对象为止，如果都没有找到该属性才会返回undefined。**
@@ -10,7 +8,7 @@
 
 ## 原型链的关系图：
 
-![输入图片说明](https://images.gitee.com/uploads/images/2018/1130/192415_8e30712f_1422543.png)
+![&#x8F93;&#x5165;&#x56FE;&#x7247;&#x8BF4;&#x660E;](https://images.gitee.com/uploads/images/2018/1130/192415_8e30712f_1422543.png)
 
 **1. prototype**
 
@@ -128,7 +126,7 @@ console.info(AA.prototype.pp) //爷爷 .
 var obj = new Base();
 ```
 
-![](../gitbook/assets/image.png)
+![](../.gitbook/assets/image.png)
 
 new操作符具体干了什么呢?其实很简单，就干了三件事情。
 

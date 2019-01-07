@@ -1,8 +1,4 @@
 # JavaScript
 
----
-
 xxxx
-
-
 

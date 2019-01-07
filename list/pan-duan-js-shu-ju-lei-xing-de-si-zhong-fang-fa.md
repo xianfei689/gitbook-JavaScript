@@ -4,7 +4,7 @@
 
 在 ECMAScript 规范中，共定义了 7 种数据类型，分为 基本类型 和 引用类型 两大类，如下所示：
 
-> **基本类型**：String、Number、Boolean、Symbol、Undefined、Null ****
+> **基本类型**：String、Number、Boolean、Symbol、Undefined、Null _\*\*_
 >
 > **引用类型**：Object
 
@@ -16,7 +16,7 @@
 
 下面介绍常用的4种方法，并对各个方法存在的问题进行简单的分析。
 
-#### **1、typeof**
+### **1、typeof**
 
 typeof 是一个操作符，其右侧跟一个一元表达式，并返回这个表达式的数据类型。返回的结果用该类型的字符串\(全小写字母\)形式表示，包括以下 7 种：number、boolean、symbol、string、object、undefined、function 等。
 
@@ -42,7 +42,7 @@ typeof new RegExp(); //object 无效
 
 其中，null 有属于自己的数据类型 Null ， 引用类型中的 数组、日期、正则 也都有属于自己的具体类型，而 typeof 对于这些类型的处理，只返回了处于其原型链最顶端的 Object 类型，没有错，但不是我们想要的结果。
 
-#### **2、instanceof**
+### **2、instanceof**
 
 instanceof 是用来判断 A 是否为 B 的实例，表达式为：A instanceof B，如果 A 是 B 的实例，则返回 true,否则返回 false。 在这里需要特别注意的是：**instanceof 检测的是原型**，我们用一段伪代码来模拟其内部执行过程：
 
@@ -64,10 +64,10 @@ instanceof (A,B) = {
 [] instanceof Array; // true
 {} instanceof Object;// true
 new Date() instanceof Date;// true
- 
+
 function Person(){};
 new Person() instanceof Person;
- 
+
 [] instanceof Object; // true
 new Date() instanceof Object;// true
 new Person instanceof Object;// true
@@ -77,11 +77,11 @@ new Person instanceof Object;// true
 
 我们来分析一下 \[ \]、Array、Object 三者之间的关系：
 
-从 instanceof 能够判断出 \[ \].\_\_proto\_\_  指向 Array.prototype，而 Array.prototype.\_\_proto\_\_ 又指向了Object.prototype，最终 Object.prototype.\_\_proto\_\_ 指向了null，标志着原型链的结束。因此，\[\]、Array、Object 就在内部形成了一条原型链：
+从 instanceof 能够判断出 \[ \].\_\_proto\_\_ 指向 Array.prototype，而 Array.prototype.\_\_proto\_\_ 又指向了Object.prototype，最终 Object.prototype.\_\_proto\_\_ 指向了null，标志着原型链的结束。因此，\[\]、Array、Object 就在内部形成了一条原型链：
 
 ![](https://images2015.cnblogs.com/blog/849589/201601/849589-20160112232510850-2003340583.png)
 
-从原型链可以看出，\[\] 的 \_\_proto\_\_  直接指向Array.prototype，间接指向 Object.prototype，所以按照 instanceof 的判断规则，\[\] 就是Object的实例。依次类推，类似的 new Date\(\)、new Person\(\) 也会形成一条对应的原型链 。因此，**instanceof 只能用来判断两个对象是否属于实例关系， 而不能判断一个对象实例具体属于哪种类型。**
+从原型链可以看出，\[\] 的 \_\_proto\_\_ 直接指向Array.prototype，间接指向 Object.prototype，所以按照 instanceof 的判断规则，\[\] 就是Object的实例。依次类推，类似的 new Date\(\)、new Person\(\) 也会形成一条对应的原型链 。因此，**instanceof 只能用来判断两个对象是否属于实例关系， 而不能判断一个对象实例具体属于哪种类型。**
 
 instanceof 操作符的问题在于，它假定只有一个全局执行环境。如果网页中包含多个框架，那实际上就存在两个以上不同的全局执行环境，从而存在两个以上不同版本的构造函数。如果你从一个框架向另一个框架传入一个数组，那么传入的数组与在第二个框架中原生创建的数组分别具有各自不同的构造函数。
 
@@ -103,7 +103,7 @@ if (Array.isArray(value)){
 
 Array.isArray\(\) 本质上检测的是对象的 \[\[Class\]\] 值，\[\[Class\]\] 是对象的一个内部属性，里面包含了对象的类型信息，其格式为 \[object Xxx\] ，Xxx 就是对应的具体类型 。对于数组而言，\[\[Class\]\] 的值就是 \[object Array\] 。
 
-#### **3、constructor**
+### **3、constructor**
 
 当一个函数 F被定义时，JS引擎会为F添加 prototype 原型，然后再在 prototype上添加一个 constructor 属性，并让其指向 F 的引用。如下所示：
 
@@ -122,7 +122,6 @@ Array.isArray\(\) 本质上检测的是对象的 \[\[Class\]\] 值，\[\[Class\]
 **细节问题：**
 
 > 1. null 和 undefined 是无效的对象，因此是不会有 constructor 存在的，这两种类型的数据需要通过其他方式来判断。
->
 > 2. 函数的 constructor 是不稳定的，这个主要体现在自定义对象上，当开发者重写 prototype 后，原有的 constructor 引用会丢失，constructor 会默认为 Object
 
 ![](https://images2015.cnblogs.com/blog/849589/201705/849589-20170508132757347-1999338357.png)
@@ -133,11 +132,11 @@ Array.isArray\(\) 本质上检测的是对象的 \[\[Class\]\] 值，\[\[Class\]
 
 因此，为了规范开发，在重写对象原型时一般都需要重新给 constructor 赋值，以保证对象实例的类型不被篡改。
 
-#### **4、toString**
+### **4、toString**
 
 toString\(\) 是 Object 的原型方法，调用该方法，默认返回当前对象的 \[\[Class\]\] 。这是一个内部属性，其格式为 \[object Xxx\] ，其中 Xxx 就是对象的类型。
 
-对于 Object 对象，直接调用 toString\(\)  就能返回 \[object Object\] 。而对于其他对象，则需要通过 call / apply 来调用才能返回正确的类型信息。
+对于 Object 对象，直接调用 toString\(\) 就能返回 \[object Object\] 。而对于其他对象，则需要通过 call / apply 来调用才能返回正确的类型信息。
 
 ```javascript
 Object.prototype.toString.call('') ;   // [object String]
@@ -154,6 +153,4 @@ Object.prototype.toString.call(new Error()) ; // [object Error]
 Object.prototype.toString.call(document) ; // [object HTMLDocument]
 Object.prototype.toString.call(window) ; //[object global] window 是全局对象 global 的引用
 ```
-
-
 
