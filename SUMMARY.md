@@ -15,5 +15,6 @@
 * [事件委托&事件冒泡](list/shi-jian-wei-tuo-shi-jian-mao-pao.md)
 * [深拷贝&浅拷贝](list/shen-kao-bei-qian-kao-bei.md)
 * [js 的异步机制](list/js-de-yi-bu-ji-zhi.md)
+* [单线程和异步队列](list/dan-xian-cheng-he-yi-bu-dui-lie.md)
 * [判断JS数据类型的四种方法](list/pan-duan-js-shu-ju-lei-xing-de-si-zhong-fang-fa.md)
 
