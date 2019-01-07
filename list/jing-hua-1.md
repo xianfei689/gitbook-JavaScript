@@ -1,10 +1,16 @@
 # JS原型链与继承
 
-JS原型链与继承
+
+
+**Javascript虽然没有继承概念，但Javascript在函数Function对象中建立了原型对象prototype，并以Function对象为主线，从上至下，在内部构建了一条原型链。**
+
+**简单来说就是建立了变量查找机制，当访问一个对象的属性时，先查找对象本身是否存在，如果不存在就去该对象所在的原型连上去找，直到Object对象为止，如果都没有找到该属性才会返回undefined。**
+
+**因此我们经常会利用函数的原型机制来实现JS继承**
 
 ## 原型链的关系图：
 
-![&#x8F93;&#x5165;&#x56FE;&#x7247;&#x8BF4;&#x660E;](https://images.gitee.com/uploads/images/2018/1130/192415_8e30712f_1422543.png)
+![输入图片说明](https://images.gitee.com/uploads/images/2018/1130/192415_8e30712f_1422543.png)
 
 **1. prototype**
 
@@ -124,7 +130,7 @@ var obj = new Base();
 
 ![](../gitbook/assets/image.png)
 
- new操作符具体干了什么呢?其实很简单，就干了三件事情。
+new操作符具体干了什么呢?其实很简单，就干了三件事情。
 
 ```javascript
 var obj  = {};
@@ -132,7 +138,7 @@ obj.__proto__ = Base.prototype;
 Base.call(obj);
 ```
 
- 第一行，我们创建了一个空对象obj  
+第一行，我们创建了一个空对象obj  
 第二行，我们将这个空对象的\_\_proto\_\_成员指向了Base函数对象prototype成员对象  
 第三行，我们将Base函数对象的this指针替换成obj，然后再调用Base函数，于是我们就给obj对象赋值了一个id成员变量，这个成员变量的值是”base”，关于call函数的用法
 
