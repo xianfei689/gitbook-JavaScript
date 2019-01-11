@@ -1,0 +1,500 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>13、判断JS数据类型的四种方法 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="js-de-yi-bu-ji-zhi.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1、ECMAScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">list</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="jing-hua-1.html">
+            
+                <a href="jing-hua-1.html">
+            
+                    
+                    2、JS原型链与继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="su-zhu-dui-xiang.html">
+            
+                <a href="su-zhu-dui-xiang.html">
+            
+                    
+                    3、宿主对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="es6-xin-te-xing.html">
+            
+                <a href="es6-xin-te-xing.html">
+            
+                    
+                    4、ES6 新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="es6-he-xin-te-xing.html">
+            
+                <a href="es6-he-xin-te-xing.html">
+            
+                    
+                    5、ES6核心特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="shang-xian-wen-huan-jing.html">
+            
+                <a href="shang-xian-wen-huan-jing.html">
+            
+                    
+                    6、上线文环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="bi-bao.html">
+            
+                <a href="bi-bao.html">
+            
+                    
+                    7、作用域 闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="yan-ge-mo-shi.html">
+            
+                <a href="yan-ge-mo-shi.html">
+            
+                    
+                    8、严格模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="zheng-ze-biao-da-shi.html">
+            
+                <a href="zheng-ze-biao-da-shi.html">
+            
+                    
+                    9、正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="shi-jian-wei-tuo-shi-jian-mao-pao.html">
+            
+                <a href="shi-jian-wei-tuo-shi-jian-mao-pao.html">
+            
+                    
+                    10、事件委托&事件冒泡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="shen-kao-bei-qian-kao-bei.html">
+            
+                <a href="shen-kao-bei-qian-kao-bei.html">
+            
+                    
+                    11、深拷贝&浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="js-de-yi-bu-ji-zhi.html">
+            
+                <a href="js-de-yi-bu-ji-zhi.html">
+            
+                    
+                    12、js 的异步机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.12" data-path="pan-duan-js-shu-ju-lei-xing-de-si-zhong-fang-fa.html">
+            
+                <a href="pan-duan-js-shu-ju-lei-xing-de-si-zhong-fang-fa.html">
+            
+                    
+                    13、判断JS数据类型的四种方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >13、判断JS数据类型的四种方法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5224;&#x65AD;js&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x56DB;&#x79CD;&#x65B9;&#x6CD5;">&#x5224;&#x65AD;JS&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x56DB;&#x79CD;&#x65B9;&#x6CD5;</h1>
+<h2 id="&#x5224;&#x65AD;js&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x56DB;&#x79CD;&#x65B9;&#x6CD5;"><a href="https://www.cnblogs.com/onepixel/p/5126046.html" target="_blank">&#x5224;&#x65AD;JS&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x56DB;&#x79CD;&#x65B9;&#x6CD5;</a></h2>
+<p>&#x5728; ECMAScript &#x89C4;&#x8303;&#x4E2D;&#xFF0C;&#x5171;&#x5B9A;&#x4E49;&#x4E86; 7 &#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x5206;&#x4E3A; &#x57FA;&#x672C;&#x7C7B;&#x578B; &#x548C; &#x5F15;&#x7528;&#x7C7B;&#x578B; &#x4E24;&#x5927;&#x7C7B;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<blockquote>
+<p><strong>&#x57FA;&#x672C;&#x7C7B;&#x578B;</strong>&#xFF1A;String&#x3001;Number&#x3001;Boolean&#x3001;Symbol&#x3001;Undefined&#x3001;Null <em>**</em></p>
+<p><strong>&#x5F15;&#x7528;&#x7C7B;&#x578B;</strong>&#xFF1A;Object</p>
+</blockquote>
+<p>&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x4E5F;&#x79F0;&#x4E3A;&#x7B80;&#x5355;&#x7C7B;&#x578B;&#xFF0C;&#x7531;&#x4E8E;&#x5176;&#x5360;&#x636E;&#x7A7A;&#x95F4;&#x56FA;&#x5B9A;&#xFF0C;&#x662F;&#x7B80;&#x5355;&#x7684;&#x6570;&#x636E;&#x6BB5;&#xFF0C;&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x63D0;&#x5347;&#x53D8;&#x91CF;&#x67E5;&#x8BE2;&#x901F;&#x5EA6;&#xFF0C;&#x5C06;&#x5176;&#x5B58;&#x50A8;&#x5728;&#x6808;&#x4E2D;&#xFF0C;&#x5373;&#x6309;&#x503C;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x4E5F;&#x79F0;&#x4E3A;&#x590D;&#x6742;&#x7C7B;&#x578B;&#xFF0C;&#x7531;&#x4E8E;&#x5176;&#x503C;&#x7684;&#x5927;&#x5C0F;&#x4F1A;&#x6539;&#x53D8;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x5C06;&#x5176;&#x5B58;&#x653E;&#x5728;&#x6808;&#x4E2D;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x964D;&#x4F4E;&#x53D8;&#x91CF;&#x67E5;&#x8BE2;&#x901F;&#x5EA6;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5176;&#x503C;&#x5B58;&#x50A8;&#x5728;&#x5806;(heap)&#x4E2D;&#xFF0C;&#x800C;&#x5B58;&#x50A8;&#x5728;&#x53D8;&#x91CF;&#x5904;&#x7684;&#x503C;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#xFF0C;&#x6307;&#x5411;&#x5B58;&#x50A8;&#x5BF9;&#x8C61;&#x7684;&#x5185;&#x5B58;&#x5904;&#xFF0C;&#x5373;&#x6309;&#x5740;&#x8BBF;&#x95EE;&#x3002;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x9664; Object &#x5916;&#xFF0C;&#x8FD8;&#x5305;&#x62EC; Function &#x3001;Array&#x3001;RegExp&#x3001;Date &#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x9274;&#x4E8E; ECMAScript &#x662F;&#x677E;&#x6563;&#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x6709;&#x4E00;&#x79CD;&#x624B;&#x6BB5;&#x6765;&#x68C0;&#x6D4B;&#x7ED9;&#x5B9A;&#x53D8;&#x91CF;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;JavaScript &#x4E5F;&#x63D0;&#x4F9B;&#x4E86;&#x591A;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x9057;&#x61BE;&#x7684;&#x662F;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x65B9;&#x6CD5;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x53C2;&#x5DEE;&#x4E0D;&#x9F50;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x4ECB;&#x7ECD;&#x5E38;&#x7528;&#x7684;4&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x5BF9;&#x5404;&#x4E2A;&#x65B9;&#x6CD5;&#x5B58;&#x5728;&#x7684;&#x95EE;&#x9898;&#x8FDB;&#x884C;&#x7B80;&#x5355;&#x7684;&#x5206;&#x6790;&#x3002;</p>
+<h3 id="1&#x3001;typeof"><strong>1&#x3001;typeof</strong></h3>
+<p>typeof &#x662F;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x5176;&#x53F3;&#x4FA7;&#x8DDF;&#x4E00;&#x4E2A;&#x4E00;&#x5143;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x7528;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x5B57;&#x7B26;&#x4E32;(&#x5168;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;)&#x5F62;&#x5F0F;&#x8868;&#x793A;&#xFF0C;&#x5305;&#x62EC;&#x4EE5;&#x4E0B; 7 &#x79CD;&#xFF1A;number&#x3001;boolean&#x3001;symbol&#x3001;string&#x3001;object&#x3001;undefined&#x3001;function &#x7B49;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">typeof</span> <span class="hljs-string">&apos;&apos;</span>; <span class="hljs-comment">// string &#x6709;&#x6548;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-number">1</span>; <span class="hljs-comment">// number &#x6709;&#x6548;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-built_in">Symbol</span>(); <span class="hljs-comment">// symbol &#x6709;&#x6548;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-literal">true</span>; <span class="hljs-comment">//boolean &#x6709;&#x6548;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-literal">undefined</span>; <span class="hljs-comment">//undefined &#x6709;&#x6548;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-literal">null</span>; <span class="hljs-comment">//object &#x65E0;&#x6548;</span>
+<span class="hljs-keyword">typeof</span> [] ; <span class="hljs-comment">//object &#x65E0;&#x6548;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Function</span>(); <span class="hljs-comment">// function &#x6709;&#x6548;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(); <span class="hljs-comment">//object &#x65E0;&#x6548;</span>
+<span class="hljs-keyword">typeof</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(); <span class="hljs-comment">//object &#x65E0;&#x6548;</span>
+</code></pre>
+<p>&#x6709;&#x4E9B;&#x65F6;&#x5019;&#xFF0C;typeof &#x64CD;&#x4F5C;&#x7B26;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E9B;&#x4EE4;&#x4EBA;&#x8FF7;&#x60D1;&#x4F46;&#x6280;&#x672F;&#x4E0A;&#x5374;&#x6B63;&#x786E;&#x7684;&#x503C;&#xFF1A;</p>
+<ul>
+<li>&#x5BF9;&#x4E8E;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#xFF0C;&#x9664; null &#x4EE5;&#x5916;&#xFF0C;&#x5747;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x6B63;&#x786E;&#x7684;&#x7ED3;&#x679C;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#xFF0C;&#x9664; function &#x4EE5;&#x5916;&#xFF0C;&#x4E00;&#x5F8B;&#x8FD4;&#x56DE; object &#x7C7B;&#x578B;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E; null &#xFF0C;&#x8FD4;&#x56DE; object &#x7C7B;&#x578B;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E; function &#x8FD4;&#x56DE;  function &#x7C7B;&#x578B;&#x3002;</li>
+</ul>
+<p>&#x5176;&#x4E2D;&#xFF0C;null &#x6709;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B; Null &#xFF0C; &#x5F15;&#x7528;&#x7C7B;&#x578B;&#x4E2D;&#x7684; &#x6570;&#x7EC4;&#x3001;&#x65E5;&#x671F;&#x3001;&#x6B63;&#x5219; &#x4E5F;&#x90FD;&#x6709;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#x578B;&#xFF0C;&#x800C; typeof &#x5BF9;&#x4E8E;&#x8FD9;&#x4E9B;&#x7C7B;&#x578B;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x53EA;&#x8FD4;&#x56DE;&#x4E86;&#x5904;&#x4E8E;&#x5176;&#x539F;&#x578B;&#x94FE;&#x6700;&#x9876;&#x7AEF;&#x7684; Object &#x7C7B;&#x578B;&#xFF0C;&#x6CA1;&#x6709;&#x9519;&#xFF0C;&#x4F46;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<h3 id="2&#x3001;instanceof"><strong>2&#x3001;instanceof</strong></h3>
+<p>instanceof &#x662F;&#x7528;&#x6765;&#x5224;&#x65AD; A &#x662F;&#x5426;&#x4E3A; B &#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x4E3A;&#xFF1A;A instanceof B&#xFF0C;&#x5982;&#x679C; A &#x662F; B &#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; true,&#x5426;&#x5219;&#x8FD4;&#x56DE; false&#x3002; &#x5728;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x7279;&#x522B;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF1A;<strong>instanceof &#x68C0;&#x6D4B;&#x7684;&#x662F;&#x539F;&#x578B;</strong>&#xFF0C;&#x6211;&#x4EEC;&#x7528;&#x4E00;&#x6BB5;&#x4F2A;&#x4EE3;&#x7801;&#x6765;&#x6A21;&#x62DF;&#x5176;&#x5185;&#x90E8;&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">instanceof</span> (A,B) = {
+    <span class="hljs-keyword">var</span> L = A.__proto__;
+    <span class="hljs-keyword">var</span> R = B.prototype;
+    <span class="hljs-keyword">if</span>(L === R) {
+        <span class="hljs-comment">// A&#x7684;&#x5185;&#x90E8;&#x5C5E;&#x6027; __proto__ &#x6307;&#x5411; B &#x7684;&#x539F;&#x578B;&#x5BF9;&#x8C61;</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+}
+</code></pre>
+<p>&#x4ECE;&#x4E0A;&#x8FF0;&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x5F53; A &#x7684; __proto__ &#x6307;&#x5411; B &#x7684; prototype &#x65F6;&#xFF0C;&#x5C31;&#x8BA4;&#x4E3A; A &#x5C31;&#x662F; B &#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x6765;&#x770B;&#x51E0;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-javascript">[] <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Array</span>; <span class="hljs-comment">// true</span>
+{} <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Object</span>;<span class="hljs-comment">// true</span>
+<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>() <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Date</span>;<span class="hljs-comment">// true</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Person</span>(<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">new</span> Person() <span class="hljs-keyword">instanceof</span> Person;
+
+[] <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Object</span>; <span class="hljs-comment">// true</span>
+<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>() <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Object</span>;<span class="hljs-comment">// true</span>
+<span class="hljs-keyword">new</span> Person <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Object</span>;<span class="hljs-comment">// true</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#xFF0C;&#x867D;&#x7136; instanceof &#x80FD;&#x591F;&#x5224;&#x65AD;&#x51FA; [ ] &#x662F;Array&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4F46;&#x5B83;&#x8BA4;&#x4E3A; [ ] &#x4E5F;&#x662F;Object&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;</p>
+<p>&#x6211;&#x4EEC;&#x6765;&#x5206;&#x6790;&#x4E00;&#x4E0B; [ ]&#x3001;Array&#x3001;Object &#x4E09;&#x8005;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#xFF1A;</p>
+<p>&#x4ECE; instanceof &#x80FD;&#x591F;&#x5224;&#x65AD;&#x51FA; [ ].__proto__ &#x6307;&#x5411; Array.prototype&#xFF0C;&#x800C; Array.prototype.__proto__ &#x53C8;&#x6307;&#x5411;&#x4E86;Object.prototype&#xFF0C;&#x6700;&#x7EC8; Object.prototype.__proto__ &#x6307;&#x5411;&#x4E86;null&#xFF0C;&#x6807;&#x5FD7;&#x7740;&#x539F;&#x578B;&#x94FE;&#x7684;&#x7ED3;&#x675F;&#x3002;&#x56E0;&#x6B64;&#xFF0C;[]&#x3001;Array&#x3001;Object &#x5C31;&#x5728;&#x5185;&#x90E8;&#x5F62;&#x6210;&#x4E86;&#x4E00;&#x6761;&#x539F;&#x578B;&#x94FE;&#xFF1A;</p>
+<p><img src="https://images2015.cnblogs.com/blog/849589/201601/849589-20160112232510850-2003340583.png" alt=""></p>
+<p>&#x4ECE;&#x539F;&#x578B;&#x94FE;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;[] &#x7684; __proto__ &#x76F4;&#x63A5;&#x6307;&#x5411;Array.prototype&#xFF0C;&#x95F4;&#x63A5;&#x6307;&#x5411; Object.prototype&#xFF0C;&#x6240;&#x4EE5;&#x6309;&#x7167; instanceof &#x7684;&#x5224;&#x65AD;&#x89C4;&#x5219;&#xFF0C;[] &#x5C31;&#x662F;Object&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x4F9D;&#x6B21;&#x7C7B;&#x63A8;&#xFF0C;&#x7C7B;&#x4F3C;&#x7684; new Date()&#x3001;new Person() &#x4E5F;&#x4F1A;&#x5F62;&#x6210;&#x4E00;&#x6761;&#x5BF9;&#x5E94;&#x7684;&#x539F;&#x578B;&#x94FE; &#x3002;&#x56E0;&#x6B64;&#xFF0C;<strong>instanceof &#x53EA;&#x80FD;&#x7528;&#x6765;&#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x5C5E;&#x4E8E;&#x5B9E;&#x4F8B;&#x5173;&#x7CFB;&#xFF0C; &#x800C;&#x4E0D;&#x80FD;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x5177;&#x4F53;&#x5C5E;&#x4E8E;&#x54EA;&#x79CD;&#x7C7B;&#x578B;&#x3002;</strong></p>
+<p>instanceof &#x64CD;&#x4F5C;&#x7B26;&#x7684;&#x95EE;&#x9898;&#x5728;&#x4E8E;&#xFF0C;&#x5B83;&#x5047;&#x5B9A;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x6267;&#x884C;&#x73AF;&#x5883;&#x3002;&#x5982;&#x679C;&#x7F51;&#x9875;&#x4E2D;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x6846;&#x67B6;&#xFF0C;&#x90A3;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x5B58;&#x5728;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x4E0D;&#x540C;&#x7684;&#x5168;&#x5C40;&#x6267;&#x884C;&#x73AF;&#x5883;&#xFF0C;&#x4ECE;&#x800C;&#x5B58;&#x5728;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4ECE;&#x4E00;&#x4E2A;&#x6846;&#x67B6;&#x5411;&#x53E6;&#x4E00;&#x4E2A;&#x6846;&#x67B6;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x90A3;&#x4E48;&#x4F20;&#x5165;&#x7684;&#x6570;&#x7EC4;&#x4E0E;&#x5728;&#x7B2C;&#x4E8C;&#x4E2A;&#x6846;&#x67B6;&#x4E2D;&#x539F;&#x751F;&#x521B;&#x5EFA;&#x7684;&#x6570;&#x7EC4;&#x5206;&#x522B;&#x5177;&#x6709;&#x5404;&#x81EA;&#x4E0D;&#x540C;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> iframe = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;iframe&apos;</span>);
+<span class="hljs-built_in">document</span>.body.appendChild(iframe);
+xArray = <span class="hljs-built_in">window</span>.frames[<span class="hljs-number">0</span>].Array;
+<span class="hljs-keyword">var</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>); <span class="hljs-comment">// [1,2,3]</span>
+arr <span class="hljs-keyword">instanceof</span> <span class="hljs-built_in">Array</span>; <span class="hljs-comment">// false</span>
+</code></pre>
+<p>&#x9488;&#x5BF9;&#x6570;&#x7EC4;&#x7684;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;ES5 &#x63D0;&#x4F9B;&#x4E86; Array.isArray() &#x65B9;&#x6CD5; &#x3002;&#x8BE5;&#x65B9;&#x6CD5;&#x7528;&#x4EE5;&#x786E;&#x8BA4;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#x672C;&#x8EAB;&#x662F;&#x5426;&#x4E3A; Array &#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x4E0D;&#x533A;&#x5206;&#x8BE5;&#x5BF9;&#x8C61;&#x5728;&#x54EA;&#x4E2A;&#x73AF;&#x5883;&#x4E2D;&#x521B;&#x5EFA;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">Array</span>.isArray(value)){
+   <span class="hljs-comment">//&#x5BF9;&#x6570;&#x7EC4;&#x6267;&#x884C;&#x67D0;&#x4E9B;&#x64CD;&#x4F5C;</span>
+}
+</code></pre>
+<p>Array.isArray() &#x672C;&#x8D28;&#x4E0A;&#x68C0;&#x6D4B;&#x7684;&#x662F;&#x5BF9;&#x8C61;&#x7684; [[Class]] &#x503C;&#xFF0C;[[Class]] &#x662F;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A;&#x5185;&#x90E8;&#x5C5E;&#x6027;&#xFF0C;&#x91CC;&#x9762;&#x5305;&#x542B;&#x4E86;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x4FE1;&#x606F;&#xFF0C;&#x5176;&#x683C;&#x5F0F;&#x4E3A; [object Xxx] &#xFF0C;Xxx &#x5C31;&#x662F;&#x5BF9;&#x5E94;&#x7684;&#x5177;&#x4F53;&#x7C7B;&#x578B; &#x3002;&#x5BF9;&#x4E8E;&#x6570;&#x7EC4;&#x800C;&#x8A00;&#xFF0C;[[Class]] &#x7684;&#x503C;&#x5C31;&#x662F; [object Array] &#x3002;</p>
+<h3 id="3&#x3001;constructor"><strong>3&#x3001;constructor</strong></h3>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x51FD;&#x6570; F&#x88AB;&#x5B9A;&#x4E49;&#x65F6;&#xFF0C;JS&#x5F15;&#x64CE;&#x4F1A;&#x4E3A;F&#x6DFB;&#x52A0; prototype &#x539F;&#x578B;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5728; prototype&#x4E0A;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; constructor &#x5C5E;&#x6027;&#xFF0C;&#x5E76;&#x8BA9;&#x5176;&#x6307;&#x5411; F &#x7684;&#x5F15;&#x7528;&#x3002;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="https://images2015.cnblogs.com/blog/849589/201705/849589-20170508125250566-1896556617.png" alt=""></p>
+<p>&#x5F53;&#x6267;&#x884C; var f = new F() &#x65F6;&#xFF0C;F &#x88AB;&#x5F53;&#x6210;&#x4E86;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;f &#x662F;F&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#xFF0C;&#x6B64;&#x65F6; F &#x539F;&#x578B;&#x4E0A;&#x7684; constructor &#x4F20;&#x9012;&#x5230;&#x4E86; f &#x4E0A;&#xFF0C;&#x56E0;&#x6B64; f.constructor == F</p>
+<p><img src="https://images2015.cnblogs.com/blog/849589/201705/849589-20170508125714941-1649387639.png" alt=""></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;F &#x5229;&#x7528;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x4E0A;&#x7684; constructor &#x5F15;&#x7528;&#x4E86;&#x81EA;&#x8EAB;&#xFF0C;&#x5F53; F &#x4F5C;&#x4E3A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x6765;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x539F;&#x578B;&#x4E0A;&#x7684; constructor &#x5C31;&#x88AB;&#x9057;&#x4F20;&#x5230;&#x4E86;&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x4E0A;&#xFF0C; &#x4ECE;&#x539F;&#x578B;&#x94FE;&#x89D2;&#x5EA6;&#x8BB2;&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570; F &#x5C31;&#x662F;&#x65B0;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x610F;&#x4E49;&#x662F;&#xFF0C;&#x8BA9;&#x65B0;&#x5BF9;&#x8C61;&#x5728;&#x8BDE;&#x751F;&#x4EE5;&#x540E;&#xFF0C;&#x5C31;&#x5177;&#x6709;&#x53EF;&#x8FFD;&#x6EAF;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x540C;&#x6837;&#xFF0C;JavaScript &#x4E2D;&#x7684;&#x5185;&#x7F6E;&#x5BF9;&#x8C61;&#x5728;&#x5185;&#x90E8;&#x6784;&#x5EFA;&#x65F6;&#x4E5F;&#x662F;&#x8FD9;&#x6837;&#x505A;&#x7684;&#xFF1A;</p>
+<p><img src="https://images2015.cnblogs.com/blog/849589/201705/849589-20170508131800457-2091987664.png" alt=""></p>
+<p><strong>&#x7EC6;&#x8282;&#x95EE;&#x9898;&#xFF1A;</strong></p>
+<blockquote>
+<ol>
+<li>null &#x548C; undefined &#x662F;&#x65E0;&#x6548;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x56E0;&#x6B64;&#x662F;&#x4E0D;&#x4F1A;&#x6709; constructor &#x5B58;&#x5728;&#x7684;&#xFF0C;&#x8FD9;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;&#x6765;&#x5224;&#x65AD;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x7684; constructor &#x662F;&#x4E0D;&#x7A33;&#x5B9A;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E3B;&#x8981;&#x4F53;&#x73B0;&#x5728;&#x81EA;&#x5B9A;&#x4E49;&#x5BF9;&#x8C61;&#x4E0A;&#xFF0C;&#x5F53;&#x5F00;&#x53D1;&#x8005;&#x91CD;&#x5199; prototype &#x540E;&#xFF0C;&#x539F;&#x6709;&#x7684; constructor &#x5F15;&#x7528;&#x4F1A;&#x4E22;&#x5931;&#xFF0C;constructor &#x4F1A;&#x9ED8;&#x8BA4;&#x4E3A; Object</li>
+</ol>
+</blockquote>
+<p><img src="https://images2015.cnblogs.com/blog/849589/201705/849589-20170508132757347-1999338357.png" alt=""></p>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x53D8;&#x6210;&#x4E86; Object&#xFF1F;</p>
+<p>&#x56E0;&#x4E3A; prototype &#x88AB;&#x91CD;&#x65B0;&#x8D4B;&#x503C;&#x7684;&#x662F;&#x4E00;&#x4E2A; { }&#xFF0C; { } &#x662F; new Object() &#x7684;&#x5B57;&#x9762;&#x91CF;&#xFF0C;&#x56E0;&#x6B64; new Object() &#x4F1A;&#x5C06; Object &#x539F;&#x578B;&#x4E0A;&#x7684; constructor &#x4F20;&#x9012;&#x7ED9; { }&#xFF0C;&#x4E5F;&#x5C31;&#x662F; Object &#x672C;&#x8EAB;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x4E3A;&#x4E86;&#x89C4;&#x8303;&#x5F00;&#x53D1;&#xFF0C;&#x5728;&#x91CD;&#x5199;&#x5BF9;&#x8C61;&#x539F;&#x578B;&#x65F6;&#x4E00;&#x822C;&#x90FD;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x7ED9; constructor &#x8D4B;&#x503C;&#xFF0C;&#x4EE5;&#x4FDD;&#x8BC1;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x7684;&#x7C7B;&#x578B;&#x4E0D;&#x88AB;&#x7BE1;&#x6539;&#x3002;</p>
+<h3 id="4&#x3001;tostring"><strong>4&#x3001;toString</strong></h3>
+<p>toString() &#x662F; Object &#x7684;&#x539F;&#x578B;&#x65B9;&#x6CD5;&#xFF0C;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#xFF0C;&#x9ED8;&#x8BA4;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x7684; [[Class]] &#x3002;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5185;&#x90E8;&#x5C5E;&#x6027;&#xFF0C;&#x5176;&#x683C;&#x5F0F;&#x4E3A; [object Xxx] &#xFF0C;&#x5176;&#x4E2D; Xxx &#x5C31;&#x662F;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E; Object &#x5BF9;&#x8C61;&#xFF0C;&#x76F4;&#x63A5;&#x8C03;&#x7528; toString() &#x5C31;&#x80FD;&#x8FD4;&#x56DE; [object Object] &#x3002;&#x800C;&#x5BF9;&#x4E8E;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x901A;&#x8FC7; call / apply &#x6765;&#x8C03;&#x7528;&#x624D;&#x80FD;&#x8FD4;&#x56DE;&#x6B63;&#x786E;&#x7684;&#x7C7B;&#x578B;&#x4FE1;&#x606F;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-string">&apos;&apos;</span>) ;   <span class="hljs-comment">// [object String]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-number">1</span>) ;    <span class="hljs-comment">// [object Number]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-literal">true</span>) ; <span class="hljs-comment">// [object Boolean]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-built_in">Symbol</span>()); <span class="hljs-comment">//[object Symbol]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-literal">undefined</span>) ; <span class="hljs-comment">// [object Undefined]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-literal">null</span>) ; <span class="hljs-comment">// [object Null]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Function</span>()) ; <span class="hljs-comment">// [object Function]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>()) ; <span class="hljs-comment">// [object Date]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call([]) ; <span class="hljs-comment">// [object Array]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>()) ; <span class="hljs-comment">// [object RegExp]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>()) ; <span class="hljs-comment">// [object Error]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-built_in">document</span>) ; <span class="hljs-comment">// [object HTMLDocument]</span>
+<span class="hljs-built_in">Object</span>.prototype.toString.call(<span class="hljs-built_in">window</span>) ; <span class="hljs-comment">//[object global] window &#x662F;&#x5168;&#x5C40;&#x5BF9;&#x8C61; global &#x7684;&#x5F15;&#x7528;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="js-de-yi-bu-ji-zhi.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 12、js 的异步机制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"13、判断JS数据类型的四种方法","level":"2.12","depth":1,"previous":{"title":"12、js 的异步机制","level":"2.11","depth":1,"path":"list/js-de-yi-bu-ji-zhi.md","ref":"list/js-de-yi-bu-ji-zhi.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"list/pan-duan-js-shu-ju-lei-xing-de-si-zhong-fang-fa.md","mtime":"2019-01-11T14:33:47.654Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-11T14:37:25.794Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
