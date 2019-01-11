@@ -8,7 +8,8 @@
 
 ## 原型链的关系图：
 
-![&#x8F93;&#x5165;&#x56FE;&#x7247;&#x8BF4;&#x660E;](https://images.gitee.com/uploads/images/2018/1130/192415_8e30712f_1422543.png)
+![&#x8F93;&#x5165;&#x56FE;&#x7247;&#x8BF4;&#x660E;](http://zhouxianfei.gitee.io/imgstore/front/javascript/2.0.png)
+
 
 **1. prototype**
 
@@ -126,7 +127,8 @@ console.info(AA.prototype.pp) //爷爷 .
 var obj = new Base();
 ```
 
-![](../.gitbook/assets/image.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/javascript/2.1.png)
+
 
 new操作符具体干了什么呢?其实很简单，就干了三件事情。
 

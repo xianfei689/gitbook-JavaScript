@@ -2,17 +2,11 @@
 
 ## ES6 核心特性  <a id="activity-name"></a>
 
-人心思动 [前端大全](javascript:void%280%29;) _2018-11-29_
-
-（给前端大全加星标，提升前端技能）
-
-> 作者：浪里行舟
->
-> [https://github.com/ljianshu/Blog/issues/10](https://github.com/ljianshu/Blog/issues/10)
-
 ## 前言
 
-ES6 虽提供了许多新特性，但我们实际工作中用到频率较高并不多，根据二八法则，我们应该用百分之八十的精力和时间，好好专研这百分之二十核心特性，将会收到事半功倍的奇效![](https://mmbiz.qpic.cn/mmbiz_png/12mPmHVcSumoZoogKsmO9qFb7Lib6KVIEd6icYDVnx8DWibX3SnTGBAdRNiaFcq7cgqQWsGyREhuh3FroUuACYrSzA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+ES6 虽提供了许多新特性，但我们实际工作中用到频率较高并不多，根据二八法则，我们应该用百分之八十的精力和时间，好好专研这百分之二十核心特性，将会收到事半功倍的奇效
+![](http://zhouxianfei.gitee.io/imgstore/front/javascript/5.0.png)
+
 
 ## 一、开发环境配置
 
@@ -22,7 +16,9 @@ ES6 虽提供了许多新特性，但我们实际工作中用到频率较高并�
 
 **为啥需要 babel？**
 
-ES6 提供了许多新特性，但并不是所有的浏览器都能够完美支持。下图是各个浏览器对 ES6 兼容性一览表\(以 export 为例\)![](https://mmbiz.qpic.cn/mmbiz_png/12mPmHVcSumoZoogKsmO9qFb7Lib6KVIETpKdLmqkUEheyKkkV8EcerKxeiahs3AEASKicH5ISyckBkM14DnK5nLw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)export各个浏览器兼容性一览表
+ES6 提供了许多新特性，但并不是所有的浏览器都能够完美支持。下图是各个浏览器对 ES6 兼容性一览表\(以 export 为例\)
+
+![](http://zhouxianfei.gitee.io/imgstore/front/javascript/5.1.png)
 
 由上图可知，有些浏览器对于 ES6 并不是很友好，针对 ES6 的兼容性问题，很多团队为此开发出了多种语法解析转换工具\(比如 babel，jsx，traceur 等\)，可以把我们写的 ES6 语法转换成 ES5，相当于在 ES6 和浏览器之间做了一个翻译官。其中Babel是一个广泛使用的转码器，可以将 ES6 代码转为 ES5 代码，从而在现有环境执行。
 
@@ -69,7 +65,8 @@ Babel 的配置文件是.babelrc，存放在项目的根目录下。该文件用
 
 现今的很多网页其实可以看做是功能丰富的应用，它们拥有着复杂的 JavaScript 代码和一大堆依赖包，模快化工具就应运而生了，其中 webpack 功能强大深受人们喜爱。  
 **Webpack 的工作方式是：把你的项目当做一个整体，通过一个给定的主文件（如：index.js），Webpack 将从这个文件开始找到你的项目的所有依赖文件，使用 loaders 处理它们，最后打包为一个（或多个）浏览器可识别的 JavaScript 文件。**  
-![](https://mmbiz.qpic.cn/mmbiz_png/12mPmHVcSumoZoogKsmO9qFb7Lib6KVIEVGLmjPatibfDbzf0mOa6cLDyZib5AD7NcbGRuIzVBR3ZO4tNVib5nwdKw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+![](http://zhouxianfei.gitee.io/imgstore/front/javascript/5.2.png)
 
 **如何配置 webpack？**
 
@@ -139,7 +136,9 @@ ES6 提供 let 和 const 来代替 var 声明变量，新的声明方式支持�
 
 **2.循环体中的闭包不再有问题**  
 在 ES5 中，如果循环体内有产生一个闭包，访问闭包外的变量，会产生问题。在 ES6，你可以使用 “let” 来避免问题。  
-![](https://mmbiz.qpic.cn/mmbiz_png/12mPmHVcSumoZoogKsmO9qFb7Lib6KVIEejyGVq9EYDAL2MDrGrKQNSXve9Tfa1BgZ9S6kXkIFje0pp1FnG4aFA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+![](http://zhouxianfei.gitee.io/imgstore/front/javascript/5.3.png)
+
 
 **3.防止重复声明变量**  
 ES6 不允许在同一个作用域内用 let 或 const 重复声明同名变量。这对于防止在不同的 js 库中存在重复声明的函数表达式十分有帮助。
@@ -171,7 +170,8 @@ btns.forEach(item=>console.log(item)) Uncaught TypeError: btns.forEach is not a 
 Array.from(btns).forEach(item=>console.log(item))将伪数组转换为数组
 ```
 
-![](https://mmbiz.qpic.cn/mmbiz_png/12mPmHVcSumoZoogKsmO9qFb7Lib6KVIEXMEF4ibMZoYNNVzpbWmbicfDQntbwgJAvxVrWp77OrmFTkhPJCAZ25Jw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![](http://zhouxianfei.gitee.io/imgstore/front/javascript/5.4.png)
+
 
 ### 2.Array.of\(v1, v2, v3\) : 将一系列值转换成数组
 
@@ -744,7 +744,7 @@ let template =
 document.getElementById('template').innerHTML = template;
 ```
 
-![](https://mmbiz.qpic.cn/mmbiz_png/12mPmHVcSumoZoogKsmO9qFb7Lib6KVIE16KnNgGRMJmltgfYPmAiaJgxMMK1181uTelcmbiaWnm7C7yzkM12PzMg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![](http://zhouxianfei.gitee.io/imgstore/front/javascript/5.5.png)
 
 再举个例子，工作中常用到 ElementUI 库，在自定义一个弹出框时，使用模板字符串就很方便:
 
@@ -855,13 +855,18 @@ Class 之间可以通过 extends 关键字实现继承，这比 ES5 的通过修
 
 ## 十、Promise 的基本使用和原理
 
-在 JavaScript 的世界中，所有代码都是单线程执行的。由于这个“缺陷”，导致 JavaScript 的所有网络操作，浏览器事件，都必须是异步执行。**Promise 是异步编程的一种解决方案，比传统的解决方案\(回调函数和事件\)更合理和更强大。**![](https://mmbiz.qpic.cn/mmbiz_png/12mPmHVcSumoZoogKsmO9qFb7Lib6KVIEJw6KyXGIAUuIRq9Xw1B0plO3mYNj1KXDNoUq5cibmBCGSj5q7ncsSMw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)回调地狱
+在 JavaScript 的世界中，所有代码都是单线程执行的。由于这个“缺陷”，导致 JavaScript 的所有网络操作，浏览器事件，都必须是异步执行。**Promise 是异步编程的一种解决方案，比传统的解决方案\(回调函数和事件\)更合理和更强大。**
+
+![](http://zhouxianfei.gitee.io/imgstore/front/javascript/5.6.png)
+
 
 ES6 中的 promise 的出现给我们很好的解决了**回调地狱**的问题，所谓的回调地狱是指当太多的异步步骤需要一步一步执行，或者一个函数里有太多的异步操作，这时候就会产生大量嵌套的回调，使代码嵌套太深而难以阅读和维护。ES6 认识到了这点问题，现在 promise 的使用，完美解决了这个问题。
 
 **Promise 原理**
 
-一旦状态改变，就不会再变，任何时候都可以得到这个结果。Promise 对象的状态改变，只有两种可能：从 pending 变为 fulfilled 和从 pending 变为 rejected。**promise 对象初始化状态为 pending ；当调用 resolve\(成功\)，会由 pending =&gt; fulfilled ；当调用 reject\(失败\)，会由 pending =&gt; rejected**。具体流程见下图：![](https://mmbiz.qpic.cn/mmbiz_png/12mPmHVcSumoZoogKsmO9qFb7Lib6KVIEpJRJ6stkulARada6lZPGnnRLJt0o8DKvMmC635ZXICZ8K8D7QgfLSQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)Promise原理
+一旦状态改变，就不会再变，任何时候都可以得到这个结果。Promise 对象的状态改变，只有两种可能：从 pending 变为 fulfilled 和从 pending 变为 rejected。**promise 对象初始化状态为 pending ；当调用 resolve\(成功\)，会由 pending =&gt; fulfilled ；当调用 reject\(失败\)，会由 pending =&gt; rejected**。具体流程见下图：
+
+![](http://zhouxianfei.gitee.io/imgstore/front/javascript/5.7.png)
 
 **Promise 的使用流程**
 

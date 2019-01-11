@@ -160,5 +160,6 @@ if (true) {
 
 ES6声明变量的六种方法 ES5只有两种声明变量的方法：var和function ES6除了添加let和const，还有另外两种声明变量的方法：import命令和class命令。所以，ES6一共有6种声明变量的方法。
 
-![](https://images.gitee.com/uploads/images/2018/1208/150728_23334af7_1422543.png)
+![](http://zhouxianfei.gitee.io/imgstore/front/javascript/4.0.png)
+
 
